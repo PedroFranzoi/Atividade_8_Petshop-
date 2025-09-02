@@ -56,3 +56,9 @@ VALUE
 ('Banho', 20),
 ('Tosa', 40),
 ('Vacina', 0);
+
+INSERT INTO agendamentos(pet_id, data_hora, servico_id)
+VALUE
+(1, '2025-09-03 14:00:00', 1),
+(2, '2025-09-04 14:30:00', 2),
+(3, '2025-09-05 15:00:00', 3);
