@@ -38,3 +38,21 @@ CREATE TABLE agendamentos(
     CONSTRAINT fk_pet FOREIGN KEY (pet_id) REFERENCES pets(id),
     CONSTRAINT fk_servico FOREIGN KEY (servico_id) REFERENCES servicos(id)
 );
+
+INSERT INTO clientes(nome, cpf)
+VALUE
+('Giovana', 12345678910),
+('Joice', 11111111111),
+('Maria', 22222222222);
+
+INSERT INTO pets(nome, cliente_id, especie, porte)
+VALUE
+('Flor', 1, 'Shih Tzu', 'Pequeno'),
+('Cacau', 2, 'Golden Retriever', 'Medio'),
+('Kira', 3, 'Yorkshire Terrier', 'Grande');
+
+INSERT INTO servicos(nome, preco)
+VALUE
+('Banho', 20),
+('Tosa', 40),
+('Vacina', 0);
